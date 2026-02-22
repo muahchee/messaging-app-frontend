@@ -1,0 +1,57 @@
+body {
+  --fore: #110c5a;
+  --back: #97cfa2;
+
+  background: var(--back);
+  color: var(--fore);
+  width: min(1000px, 100vw);
+  margin: auto;
+  padding: 2vw 3vw;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.title {
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+header,
+body,
+footer {
+  display: flex;
+}
+
+header {
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+div.links-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+div.links-cont.vertical {
+  flex-direction: column;
+}
+
+a.settings {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+}
+
+a.settings svg {
+  width: 1rem;
+  height: 1rem;
+}
