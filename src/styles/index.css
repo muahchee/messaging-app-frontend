@@ -44,14 +44,14 @@ div.links-cont.vertical {
   flex-direction: column;
 }
 
-a.settings {
+a.link-icon {
   display: flex;
   align-items: center;
   gap: 3px;
 
 }
 
-a.settings svg {
+header svg {
   width: 1rem;
   height: 1rem;
 }

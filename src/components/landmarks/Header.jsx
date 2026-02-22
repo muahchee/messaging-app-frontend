@@ -1,3 +1,4 @@
+import { ContactsIcon } from "../partials/contactsSVG";
 import { SettingsIcon } from "../partials/settingsSVG";
 import { Link } from "react-router-dom";
 
@@ -12,9 +13,11 @@ export function Header() {
         <p className="title">Welcome, [USER]!</p>
       </Link>
 
-      <Link to={"/contacts"}>Contacts</Link>
+      <Link className="link-icon"  to={"/contacts"}>
+        <ContactsIcon /> Contacts
+      </Link>
 
-      <Link className="settings" to={"/settings"}>
+      <Link className="link-icon" to={"/settings"}>
         <SettingsIcon /> Settings
       </Link>
 
@@ -25,7 +28,6 @@ export function Header() {
       {/* ======= logged out only ========= */}
       <Link to={"/login"}>Login</Link>
       <Link to={"/signup"}>Signup</Link>
-
     </header>
-  )
+  );
 }
