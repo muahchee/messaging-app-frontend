@@ -16,7 +16,12 @@ export function Signup() {
 
         <p>
           <label htmlFor="password">Confirm Password: </label>
-          <input type="password" id="confirmPassword" name="confirmPassword" required />
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+          />
         </p>
 
         <label htmlFor="profilePicture">Profile Picture (optional): </label>
@@ -24,6 +29,7 @@ export function Signup() {
         <input
           type="file"
           name="profilePicture"
+          id="profilePicture"
           accept="image/png, image/jpeg, image/jpg, image/webp"
         />
 
